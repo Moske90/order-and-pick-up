@@ -6,7 +6,7 @@ public class ShopAndGo {
 
 	public static void main(String[] args) {
 //		Pasta Bar
-		
+
 		Scanner s = new Scanner(System.in);
 
 		String[] regularCustomers = { "0631111111", "063222222", "063333333", "064444444", "065555555", "066666666" };
@@ -17,4 +17,17 @@ public class ShopAndGo {
 
 	}
 
+	public static int findIngredient(String[] ingredients, String ingredient) {
+		int index = 0;
+		for (int i = 0; i < ingredients.length; i++) {
+			if (ingredients[i].equals(ingredient)) {
+				return index = i;
+			}
+		}
+		if (ingredient.equals("Poruci")) {
+			return index = -1;
+		} else {
+			return index = 16;
+		}
+	}
 }
