@@ -30,4 +30,13 @@ public class ShopAndGo {
 			return index = 16;
 		}
 	}
+	
+	public static boolean isRegularCustomer(String[] regularCustomers, String phoneNumber) {
+		for (int i = 0; i < regularCustomers.length; i++) {
+			if (regularCustomers[i].equals(phoneNumber)) {
+				return true;
+			}
+		}
+		return false;
+	}
 }
